@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb
+    username: root
+    password: 1234
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  security:
+    user:
+      name: admin
+      password: 1234
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 307731059974-pgeoqaoek5fej26mm2rdmdf0qtartogo.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - profile
